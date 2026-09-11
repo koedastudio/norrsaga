@@ -1,0 +1,42 @@
+name: Feature request
+description: An idea for one of the Norrsaga apps
+labels: [enhancement]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app
+      multiple: true
+      options:
+        - Android Automotive OS (car)
+        - iOS
+        - macOS
+        - All of them
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do
+      description: >-
+        The situation or annoyance behind the idea: what you want to do that
+        you currently can't, or can't do comfortably.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you'd like
+      description: >-
+        How you imagine it working. Rough is fine. In the car the host renders
+        its own UI from our browse tree, so car ideas may need adapting to what
+        Android Automotive allows.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else
+      description: >-
+        Optional. Workarounds you've tried, how other apps do it, screenshots,
+        or the car/server setup this matters for.

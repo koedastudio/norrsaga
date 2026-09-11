@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Ebook narration (norrsaga-narrator)
+    url: https://github.com/koedastudio/norrsaga-narrator/issues
+    about: Bugs and ideas for the narrator sidecar itself go to its own repo.
+  - name: Norrklang (music)
+    url: https://github.com/koedastudio/norrklang/issues
+    about: Issues with our music app belong in the Norrklang repo.
+  - name: Security vulnerability
+    url: https://github.com/koedastudio/norrsaga/security/advisories/new
+    about: Report privately, never in public issues. See SECURITY.md.

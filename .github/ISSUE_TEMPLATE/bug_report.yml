@@ -1,0 +1,63 @@
+name: Bug report
+description: Something broke in one of the Norrsaga apps
+labels: [bug]
+body:
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app
+      options:
+        - Android Automotive OS (car)
+        - iOS
+        - Not sure / more than one
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: App version
+      description: Shown in the app's Settings.
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Car / device
+      description: >-
+        Car model and its OS version, or the emulator image. For iOS,
+        the device and OS version.
+      placeholder: Polestar 4, Android Automotive OS 12 · iPhone 16, iOS 26.1
+    validations:
+      required: true
+  - type: input
+    id: server
+    attributes:
+      label: Audiobookshelf version
+      description: Shown under Settings in the Audiobookshelf web UI.
+      placeholder: 2.36.0
+    validations:
+      required: true
+  - type: dropdown
+    id: narrator
+    attributes:
+      label: Ebook narration involved
+      description: Were you using norrsaga-narrator when this happened?
+      options:
+        - "No"
+        - "Yes"
+        - Not sure
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Steps to reproduce, what you expected, and what you got instead.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / screenshots
+      description: >-
+        Optional. adb logcat excerpts, Console.app output, or photos of the
+        screen. Redact server addresses and tokens you don't want public.
